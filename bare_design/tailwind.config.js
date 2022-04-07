@@ -105,8 +105,8 @@ module.exports = {
       64: '16rem',
       72: '18rem',
       80: '20rem',
-      96: '24rem',
-    },
+      96: '24rem'
+        },
     animation: {
       none: 'none',
       spin: 'spin 1s linear infinite',
@@ -642,6 +642,7 @@ module.exports = {
       ...breakpoints(theme('screens')),
     }),
     minHeight: {
+      final: '30rem' ,
       0: '0px',
       full: '100%',
       screen: '100vh',
