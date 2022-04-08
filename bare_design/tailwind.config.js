@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./index.html'],
+  content: ['./index.html' , './recipe_step.html'],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
@@ -539,6 +539,7 @@ module.exports = {
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
+      final: '30rem'
     }),
     inset: ({ theme }) => ({
       auto: 'auto',
@@ -643,7 +644,7 @@ module.exports = {
     }),
     minHeight: {
       right: '45rem' ,
-      final: '30rem' ,
+      // final: '30rem' ,
       0: '0px',
       full: '100%',
       screen: '100vh',
