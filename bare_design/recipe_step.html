@@ -32,7 +32,12 @@
            
         </nav>
     </div>
-    <div class="main grid grid-cols-7 mt-20 mx-16 gap-40">
+    <div class="main grid 
+        sm:grid-cols-7 mt-20
+        grid-cols-5 
+        mx-16 
+        lg:gap-40
+        gap-10">
         <div class="recipe col-span-5">
             <div class="creator flex flex-row justify-between mr-10">
                 <div class="flex flex-row gap-10 ">
@@ -50,8 +55,19 @@
                 <a class="justify-self-center self-center bg-primary text-white py-2 px-6 font-semibold rounded-md" href="#"> Subscribe </a>
             </div>
 
-            <div class="content grid grid-cols-2 px-12 py-10 mb-40 mt-4 border-t-2 border-gray-300 border-solid">
-                <img class="object-cover h-final w-4/5" src="./assets/meal-2.jpg" alt="" srcset="">
+            <div class="content 
+                md:grid md:grid-cols-2 
+                px-12 py-10 mb-40 
+                mt-4 border-t-2 
+                border-gray-300 
+                border-solid">
+                <img class="
+                    object-cover 
+                    md:h-final 
+                    md:w-4/5
+                    w-0
+                    h-0                    
+                    " src="./assets/meal-2.jpg" alt="" srcset="">
 
                 <div class="overflow-y-scroll h-final">
 
@@ -104,7 +120,7 @@
                     <a class="text-primary" href="#">Leave a Comment</a>
                 </div>
                 <div class="comment">
-                    <div class="mx-5 mb-20 w-2/3">
+                    <div class="mx-5 mb-20 sm:w-2/3 w-4/5">
                         <div class="flex flex-row mb-5">
         
                             <img class="rounded-full w-20 h-20" src="./assets/customers/ben.jpg" alt="" srcset="">
@@ -122,7 +138,7 @@
                         </p>
                     </div>
 
-                    <div class="mx-5 mb-20 w-2/3">
+                    <div class="mx-5 mb-20 sm:w-2/3 w-4/5">
                         <div class="flex flex-row mb-5">
         
                             <img class="rounded-full w-20 h-20" src="./assets/customers/ben.jpg" alt="" srcset="">
@@ -140,7 +156,7 @@
                         </p>
                     </div>
 
-                    <div class="mx-5 mb-20 w-2/3">
+                    <div class="mx-5 mb-20 sm:w-2/3 w-4/5">
                         <div class="flex flex-row mb-5">
         
                             <img class="rounded-full w-20 h-20" src="./assets/customers/ben.jpg" alt="" srcset="">
@@ -161,88 +177,214 @@
             </div>
         </div>
 
-        <div class="col-span-2 ">
+        <div class="sm:col-span-2 sm:block hidden">
+
 
             <div class="related_recipes justify-self-end mb-20">
-                <h2 class="text-3xl font-bold tracking-wider mb-10">Related Recipes</h2>
-                <div class="flex flex-rows gap-5 mb-5">
-                    <img class="w-36 h-36 rounded-lg" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
+                <h2 class="
+                    text-3xl 
+                    font-bold 
+                    tracking-wider my-10
+                    md:text-left
+                    text-center">Related Recipes</h2>
+                <div class="
+                    flex flex-rows 
+                    gap-5 mb-5">
+                    <img class="
+                        md:w-36 md:h-36 
+                        w-28 h-28
+                        rounded-lg" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
                     <div class="self-center flex flex-col">
-                        <strong>Fasika Doro</strong>
+                        <strong class="
+                            md:text-2xl
+                            text-xl
+                        ">Fasika Doro</strong>
                         <small>ratings</small>
-                        <small>this is a very minimal description of doro...</small>
+                        <small class="
+                        text-xs
+                        md:h-auto md:w-auto
+                        
+                        md:text-xl
+                        
+                        ">this is a very minimal description of doro...</small>
                     </div>
                 </div>
     
-                <div class="flex flex-rows gap-5 mb-5">
-                    <img class="w-36 h-36 rounded-lg" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
+                <div class="
+                    flex flex-rows 
+                    gap-5 md:mb-5">
+                    <img class="
+                        md:w-36 md:h-36 
+                        w-28 h-28
+                        rounded-lg" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
                     <div class="self-center flex flex-col">
-                        <strong>Fasika Doro</strong>
+                        <strong class="
+                            md:text-2xl
+                            text-xl
+                        ">Fasika Doro</strong>
                         <small>ratings</small>
-                        <small>this is a very minimal description of doro...</small>
+                        <small class="
+                        text-xs
+                        md:h-auto md:w-auto
+                        
+                        md:text-xl
+                        
+                        ">this is a very minimal description of doro...</small>
                     </div>
                 </div>
 
-                <div class="flex flex-rows gap-5 mb-5">
-                    <img class="w-36 h-36 rounded-lg" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
+                <div class="
+                    flex flex-rows 
+                    gap-5 mb-5">
+                    <img class="
+                        md:w-36 md:h-36 
+                        w-28 h-28
+                        rounded-lg" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
                     <div class="self-center flex flex-col">
-                        <strong>Fasika Doro</strong>
+                        <strong class="
+                            md:text-2xl
+                            text-xl
+                        ">Fasika Doro</strong>
                         <small>ratings</small>
-                        <small>this is a very minimal description of doro...</small>
+                        <small class="
+                        text-xs
+                        md:h-auto md:w-auto
+                        
+                        md:text-xl
+                        
+                        ">this is a very minimal description of doro...</small>
                     </div>
                 </div>
 
-                <div class="flex flex-rows gap-5 mb-5">
-                    <img class="w-36 h-36 rounded-lg" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
+                <div class="
+                    flex flex-rows 
+                    gap-5 mb-5">
+                    <img class="
+                        md:w-36 md:h-36 
+                        w-28 h-28
+                        rounded-lg" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
                     <div class="self-center flex flex-col">
-                        <strong>Fasika Doro</strong>
+                        <strong class="
+                            md:text-2xl
+                            text-xl
+                        ">Fasika Doro</strong>
                         <small>ratings</small>
-                        <small>this is a very minimal description of doro...</small>
+                        <small class="
+                        text-xs
+                        md:h-auto md:w-auto
+                        
+                        md:text-xl
+                        
+                        ">this is a very minimal description of doro...</small>
                     </div>
                 </div>
-    
+            <div class="sm:col-span-2 sm:block hidden">
+                <h2 class="text-3xl 
+                font-bold 
+                tracking-wider my-10
+                md:text-left
+                text-center
+                ">Recipe Creators</h2>
+
+                <div class="
+                flex flex-rows 
+                gap-5 mb-5">
+                <img class="
+                    md:w-36 md:h-36 
+                    w-28 h-28
+                    rounded-full" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
+                <div class="self-center flex flex-col">
+                    <strong class="
+                        md:text-2xl
+                        text-xl
+                    ">Fasika Doro</strong>
+                    <small>ratings</small>
+                    <small class="
+                    text-xs
+                    md:h-auto md:w-auto
+                    
+                    md:text-xl
+                    
+                    ">this is a very minimal description of doro...</small>
+                </div>
             </div>
 
-            <div class="col-span-2 ">
 
-                <div class="related_recipes justify-self-end">
-                    <h2 class="text-3xl font-bold tracking-wider mb-10">Feautured Cheifs</h2>
-                    <div class="flex flex-rows gap-5 mb-5">
-                        <img class="w-28 h-28 rounded-full" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
-                        <div class="self-center flex flex-col">
-                            <strong>Fasika Doro</strong>
-                            <small>ratings</small>
-                            <small>this is a very minimal description of doro...</small>
-                        </div>
-                    </div>
+            <div class="
+            flex flex-rows 
+            gap-5 mb-5">
+            <img class="
+                md:w-36 md:h-36 
+                w-28 h-28
+                rounded-full" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
+            <div class="self-center flex flex-col">
+                <strong class="
+                    md:text-2xl
+                    text-xl
+                ">Fasika Doro</strong>
+                <small>ratings</small>
+                <small class="
+                text-xs
+                md:h-auto md:w-auto
+                
+                md:text-xl
+                
+                ">this is a very minimal description of doro...</small>
+            </div>
+        </div>
+
+
+        <div class="
+        flex flex-rows 
+        gap-5 mb-5">
+        <img class="
+            md:w-36 md:h-36 
+            w-28 h-28
+            rounded-full" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
+        <div class="self-center flex flex-col">
+            <strong class="
+                md:text-2xl
+                text-xl
+            ">Fasika Doro</strong>
+            <small>ratings</small>
+            <small class="
+            text-xs
+            md:h-auto md:w-auto
+            
+            md:text-xl
+            
+            ">this is a very minimal description of doro...</small>
+        </div>
+    </div>
+
+
+    <div class="
+    flex flex-rows 
+    gap-5 mb-5">
+    <img class="
+        md:w-36 md:h-36 
+        w-28 h-28
+        rounded-full" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
+    <div class="self-center flex flex-col">
+        <strong class="
+            md:text-2xl
+            text-xl
+        ">Fasika Doro</strong>
+        <small>ratings</small>
+        <small class="
+        text-xs
+        md:h-auto md:w-auto
         
-                    <div class="flex flex-rows gap-5 mb-5">
-                        <img class="w-28 h-28 rounded-full" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
-                        <div class="self-center flex flex-col">
-                            <strong>Fasika Doro</strong>
-                            <small>ratings</small>
-                            <small>this is a very minimal description of doro...</small>
-                        </div>
-                    </div>
+        md:text-xl
         
-    
-                    <div class="flex flex-rows gap-5 mb-5">
-                        <img class="w-28 h-28 rounded-full" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
-                        <div class="self-center flex flex-col">
-                            <strong>Fasika Doro</strong>
-                            <small>ratings</small>
-                            <small>this is a very minimal description of doro...</small>
-                        </div>
-                    </div>
-        
-                    <div class="flex flex-rows gap-5 mb-5">
-                        <img class="w-28 h-28 rounded-full" src="./assets/gallery/gallery-1.jpg" alt="" srcset="">
-                        <div class="self-center flex flex-col">
-                            <strong>Fasika Doro</strong>
-                            <small>ratings</small>
-                            <small>this is a very minimal description of doro...</small>
-                        </div>
-                    </div>
+        ">this is a very minimal description of doro...</small>
+    </div>
+</div>
+
+
+            
+
+                
         
         
                 </div>

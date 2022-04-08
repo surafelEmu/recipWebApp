@@ -46,11 +46,11 @@
             scroll-behavior: smooth;
         }
     
-        /* html, body {
+        html, body {
             max-width: 100%;
             overflow-x: hidden;
-            background-color: #eeedeb;
-        } */
+            /* background-color: #eeedeb; */
+        }
 
         *{
             font-size: 1.4rem;
