@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./index.html' , './recipe_step.html'],
+  content: ['./index.html' , './recipe_step.html'  , './creator_profile.html'],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
