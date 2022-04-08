@@ -17,6 +17,16 @@
       GREY COLOR: #343a40
       */
 
+
+
+      .nav {
+          @apply text-2xl my-auto text-white font-semibold tracking-wider
+
+      }
+
+      
+     
+
     
       * {
         margin: 0 ;

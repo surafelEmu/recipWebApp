@@ -4,6 +4,7 @@ module.exports = {
   darkMode: 'media', // or 'class'
   theme: {
     screens: {
+      ssm: '480px' ,
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -12,6 +13,8 @@ module.exports = {
     },
     colors: ({ colors }) => ({
       gradint: 'linear-gradient(90deg , rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0.288) 90%)',
+      realWhite: 'rgb(255, 255, 255)' ,
+      fadeWhite: 'rgba(255, 255, 255, 0.09)' ,
       secoundary: '#f1f7f7' ,
       primary: '#00866d' ,
       inherit: colors.inherit,
