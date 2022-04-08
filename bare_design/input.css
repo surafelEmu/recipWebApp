@@ -24,6 +24,11 @@
 
       }
 
+      side {
+        @apply text-2xl my-auto text-white font-semibold tracking-wider
+
+    }
+
       
      
 
