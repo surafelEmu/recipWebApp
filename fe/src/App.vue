@@ -1,25 +1,28 @@
 <template>
   <v-app>
     <v-main>
-      <SignUp />
+      <Popup />
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import SignUp from './components/SignUp.vue'
-
+import Recipe from './components/Recipe.vue'
+import PopUp from './components/popUp.vue'
+import Popup from './components/popup.vue'
 export default {
   name: 'App',
 
   components: {
     HelloWorld,
-    SignUp
+    Recipe ,
+    PopUp , 
+    Popup
   },
 
   data: () => ({
-    //
+    
   }),
 }
 </script>

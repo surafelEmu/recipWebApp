@@ -3,30 +3,13 @@
 <v-card
   elevation="6"
   outlined
-class="h-5/7 mx-auto my-28 w-98 text-3xl rounded-3xl">
+class="h-5/6 mx-auto mt-20 w-98 text-3xl rounded-3xl">
   <h2 class="text-center font-semibold my-20">SignUp</h2>
-  <v-form class="w-4/5 mx-14 h-5/6 my-10 mb-14 mx-auto"
+  <v-form class="w-4/5 mx-14 h-5/6 my-10 mb-28 mx-auto"
     ref="form"
     v-model="valid"
     lazy-validation
   >
-
-
-        
-
-           <v-text-field
-            v-model="name"
-            :counter="10"
-            :rules="nameRules"
-            required
-            density="compact"
-            color="gray"
-            label="Full Name"
-            single-line
-            placeholder="Full Name"
-            variant="outlined"
-            class="mx-5 my-3 "
-          ></v-text-field>
 
            <v-text-field
             v-model="email"
@@ -41,7 +24,6 @@ class="h-5/7 mx-auto my-28 w-98 text-3xl rounded-3xl">
             class="mx-5 my-3"
           ></v-text-field>
 
-          
           <v-text-field
             v-model="password"
             :rules="[rules.required, rules.min]"
@@ -52,31 +34,27 @@ class="h-5/7 mx-auto my-28 w-98 text-3xl rounded-3xl">
             single-line
             placeholder="password"
             variant="outlined"
-            class="mx-5 mb-5"
+            class="mx-5 my-3 mb-7"
           ></v-text-field>
 
-     <v-row class="flex mx-auto">
+
+    <v-row class="flex flex-row mb-10 mx-5">
+    
 
      <v-btn
-      :disabled="!valid"
       size="small"
       flat
       @click="validate"
       color="primary"
-      class="text-lg mx-5 mb-20"
+      class="text-sm my-auto mb-5 align-center"
     >
-      Sign Up
+      Sign In
     </v-btn>
-     </v-row>
 
-    <v-row class="flex flex-row justify-between">
-    
-
-    <a class="text-lg mx-5">Forgot Password?</a>
-
-     <a class="mt-3 text-lg pl-5 font-semibold text-primary">SIGN IN</a>
+     <a class="mt-3 text-lg pl-5 font-semibold text-primary">SIGN UP</a>
     </v-row>
 
+    <a class="text-lg mx-5">Forgot Password?</a>
 
 
 
@@ -89,12 +67,7 @@ class="h-5/7 mx-auto my-28 w-98 text-3xl rounded-3xl">
   export default {
     data: () => ({
       valid: true,
-      name: '',
       password: 'Password',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters',
-      ],
       email: '',
       emailRules: [
         v => !!v || 'E-mail is required',
